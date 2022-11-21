@@ -1,0 +1,83 @@
+.command {
+    background-color: $color-command-background;
+}
+
+.container {}
+
+.command__title {}
+
+.title {}
+
+.command__list {
+    gap: 30px;
+
+}
+
+.command__item {}
+
+.command__div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: $color-white;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}
+
+.fullName__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18x;
+    text-align: center;
+    letter-spacing: 0.03em; 
+
+}
+
+.job__text {
+    margin-top: 10px;
+
+    color: var(--gray-color-p);
+    font-size: 16px;
+    line-height: 1.18x;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
+
+.social__list {
+    margin-top: 16px;
+
+
+}
+
+.social__link {
+
+    
+    background-color: transparent;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    /* border: 1px solid var(--color-border-EEEEEE); */
+    fill: $icon-social;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover{
+        background-color: $color-blue;
+        
+    }
+
+    &:focus .social__icon,
+    &:hover .social__icon{
+        fill: $color-white;
+    }
+
+
+}
+
+.social__icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
